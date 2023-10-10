@@ -1,0 +1,20 @@
+
+algorithme  MaxTable
+variable 
+    tableau tab(10) : entier
+    i,Max               : entier
+
+debut
+    pour i <- 0 a 9 pas 1 faire
+        ecrire("enter number ",i+1)
+        lire(tab(i))
+    fin pour
+    min<-tab(i)
+    pour i <- 0 a 9 pas 1 faire
+        si tab(i)>Max alors
+          min <- tab(i)
+        finsi
+    fin pour
+    ecrire("Max is :", Max)
+fin
+
