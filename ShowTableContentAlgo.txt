@@ -1,0 +1,14 @@
+
+algorithme ShowTableContent
+variable 
+    tableau tab(10) : entier
+    i               : entier
+
+debut
+    pour i <- 0 a 9 pas 1 faire
+        tab(i) = 0
+    fin pour
+    pour i <- 0 a 9 pas 1 faire
+        ecrire(tab(i))
+    fin pour
+fin
