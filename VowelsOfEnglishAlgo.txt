@@ -1,0 +1,18 @@
+
+algorithme VowelsOfEnglish
+variable 
+    tableau tab(6) : entier
+    i               : entier
+
+debut
+    tab(0) <- "a"
+    tab(1) <- "e"
+    tab(2) <- "y"
+    tab(3) <- "u"
+    tab(4) <- "i"
+    tab(5) <- "o"
+
+    pour i <- 0 a 6 pas 1 faire
+        ecrire(tab(i))
+    fin pour
+fin
