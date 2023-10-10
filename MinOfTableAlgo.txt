@@ -1,0 +1,20 @@
+
+algorithme  MinTable
+variable 
+    tableau tab(10) : entier
+    i,min               : entier
+
+debut
+    pour i <- 0 a 9 pas 1 faire
+        ecrire("enter number ",i+1)
+        lire(tab(i))
+    fin pour
+    min<-tab(i)
+    pour i <- 0 a 9 pas 1 faire
+        si tab(i)<min alors
+          min <- tab(i)
+        finsi
+    fin pour
+    ecrire("min is :", min)
+fin
+
