@@ -1,0 +1,16 @@
+ 
+algorithme bankAccount
+variable 
+    tableau tab(20) : entier
+    i               : entier
+
+debut
+    tab(0) <- 1000
+    pour i <- 1 a 19 pas 1 faire
+        tab(i) = tab(i-1) + tab(i-1) * 0.02
+    fin pour
+    pour i <- 0 a 19 PAS 1 faire 
+        ecrire("in the year number ", i , "the account sold is " , tab(i))
+    fin pour
+fin
+
