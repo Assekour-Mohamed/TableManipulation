@@ -1,0 +1,22 @@
+
+algorithme NumOcursInTable
+variable 
+    tableau tab(50) : entier
+    i,n,m               : entier
+ debut
+   
+    pour i <- 0 a 9 pas 1 faire
+        ecrrire("enter num " , i+1)
+        lire(tab(i))
+    fin pour
+    ecrire("enter a number to look for ")
+    lire(n)
+    m <- 0
+    pour i <- 0 a 9 pas 1 faire
+        si n = tab(i)
+            m=m+1
+        fin si
+    fin pour
+    ecrire(n , "ocurs " , m ,"time")
+    finsi
+fin
