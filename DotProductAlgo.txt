@@ -1,0 +1,20 @@
+
+algorithme  
+variable 
+    tableau tab1(3),tab2(3) : entier    
+    i               : entier
+    dp              : reel
+debut
+    pour i <- 0 a 3 pas 1 faire
+        ecrire(" enter value ",i," of the table 1 ")
+        lire(tab1(i))
+        ecrire(" enter value ",i," of the table 2 ")
+        lire(tab2(i))
+    fin pour
+    dp <- 0
+    pour i <- 0 a 9 pas 1 faire
+        dp = dp + tab1(i)* tab2(i)
+    fin pour
+    ecrire("dot product ", dp)
+fin
+
