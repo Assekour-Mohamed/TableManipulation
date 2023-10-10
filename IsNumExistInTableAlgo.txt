@@ -1,0 +1,27 @@
+
+algorithme IsNumExistInTable
+variable 
+    tableau tab(10) : entier
+    i,n               : entier
+    IsExist           : boolean
+debut
+   
+    pour i <- 0 a 9 pas 1 faire
+        ecrrire("enter num " , i+1)
+        lire(tab(i))
+    fin pour
+    ecrire("enter a number to look for ")
+    lire(n)
+    IsExist <- faux
+    pour i <- 0 a 9 pas 1 faire
+        si n = tab(i)
+          IsExist <- vrai
+        fin si
+    fin pour
+    si IsExist = vrai
+        ecrire("exist")
+    sino 
+        ecrire("not exist)
+    finsi
+fin
+
