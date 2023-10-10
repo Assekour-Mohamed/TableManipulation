@@ -1,0 +1,20 @@
+
+algorithme SumAndProOfNumsInTabel
+variable 
+    tableau tab(10) : entier
+    i               : entier
+    s,p             : reel
+debut
+    pour i <- 0 a 9 pas 1 faire
+        lire(tab(i))
+    fin pour
+    s <- 0
+    p <- 1
+    pour i <- 0 a 9 pas 1 faire
+        s = s + tab(i)
+        p = p * tab(i)
+    fin pour
+    ecrire("somme = " ",s)
+    ecrire("product = " , p)
+    ecrire("moy = " , s/10 )
+fin
