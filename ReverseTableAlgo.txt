@@ -1,0 +1,16 @@
+
+algorithme  ReverseTable
+variable 
+    tableau tab(10),temp(10) : entier
+    i               : entier
+
+debut
+    pour i <- 0 a 9 pas 1 faire
+       ecrire ("enter number")
+    fin pour
+    tab <- temp
+    pour i <- 0 a 9 pas 1 faire
+        tab(i) <- temp(9 - i )
+    fin pour
+fin
+
